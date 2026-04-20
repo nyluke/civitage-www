@@ -1,172 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Civitage | High-Impact Software Engineering & Consulting</title>
-    <meta name="description"
-        content="Civitage is a specialized software consultancy building critical digital infrastructure across finance, defense, energy, and the built environment.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Civitage — High-Impact Software Engineering</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+  // Design config — change values to re-skin. Options documented in main.js.
+  window.__TWEAKS__ = {
+    "direction": "editorial",
+    "accent": "blue",
+    "motion": "subtle",
+    "heroTreatment": "aperture",
+    "density": "comfortable"
+  };
+</script>
+
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">CIVITAGE</div>
-            <ul class="nav-links">
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact" class="btn-primary">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="fade-in">Engineering for <span class="text-gradient">complex industries</span>.</h1>
-            <p class="fade-in delay-1">Civitage is a boutique software consultancy. We build high-impact digital systems
-                for global finance, national defense, energy, and the built environment.</p>
-            <div class="fade-in delay-2">
-                <a href="#solutions" class="btn-large">View Our Expertise</a>
-            </div>
-        </div>
-    </header>
+<!-- ================== NAV ================== -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="wordmark"><span class="dot"></span>CIVITAGE</a>
+    <div class="nav-links">
+      <a href="#sectors">Sectors</a>
+      <a href="#manifesto">Practice</a>
+      <a href="#proof">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">
+      <span>Start a project</span>
+      <span class="arr">→</span>
+    </a>
+  </div>
+</nav>
 
-    <section id="solutions" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Capabilities</h2>
-                <p>We build tools that bridge the gap between regulatory complexity and operational excellence.</p>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="12" y1="1" x2="12" y2="23"></line>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
-                    </div>
-                    <h3>Enterprise Finance</h3>
-                    <p>High-reliability systems for capital markets, identity verification, and scalable fintech
-                        infrastructure.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h3>Defense & Energy</h3>
-                    <p>Building resilient, secure, and mission-critical software for national security and modern energy
-                        grids.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-                            <line x1="9" y1="22" x2="9" y2="2"></line>
-                            <line x1="15" y1="22" x2="15" y2="2"></line>
-                            <line x1="4" y1="6" x2="20" y2="6"></line>
-                            <line x1="4" y1="10" x2="20" y2="10"></line>
-                            <line x1="4" y1="14" x2="20" y2="14"></line>
-                            <line x1="4" y1="18" x2="20" y2="18"></line>
-                        </svg>
-                    </div>
-                    <h3>Urban Intelligence</h3>
-                    <p>Advanced data platforms for the built environment. See our work at <a
-                            href="https://citybuilder.nyc" target="_blank"
-                            style="color: var(--primary); text-decoration: underline;">CityBuilder.nyc</a>.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ================== HERO ================== -->
+<header class="hero grid-bg">
+  <div class="wrap">
 
-    <section id="about" class="mission">
-        <div class="container mission-grid">
-            <div class="mission-text">
-                <span class="badge">Our Mission</span>
-                <h2>Scaling the digital backbone of modern industry.</h2>
-                <p>At Civitage, we believe that software is the ultimate lever for progress. We specialize in solving
-                    high-stakes problems across diverse sectors—modernizing the infrastructure that powers our cities,
-                    economies, and national safety.</p>
-            </div>
-            <div class="mission-visual">
-                <!-- Visual element or another generated image can go here -->
-                <div class="glass-box">
-                    <div class="stat-item">
-                        <span class="stat-number">1k+</span>
-                        <span class="stat-label">Properties Tracked</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Monitoring</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="hero-eyebrow">
+      <span class="bar"></span>
+      <span class="mono">N°01 — Software Consultancy / Est. NYC / 2018</span>
+    </div>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-box">
-                <div class="contact-info">
-                    <h2>Ready to elevate your operations?</h2>
-                    <p>Get in touch with our team of experts to discuss how Civitage can transform your business.</p>
-                    <div class="contact-details">
-                        <div class="detail">
-                            <strong>Email</strong>
-                            <a href="mailto:info@civitage.com">info@civitage.com</a>
-                        </div>
-                    </div>
-                </div>
-                <form id="contact-form" action="https://formspree.io/f/xzdzygyz" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
-                    </div>
-                    <button type="submit" id="submit-btn" class="btn-submit">Send Message</button>
-                    <p id="form-status" style="margin-top: 1rem; font-size: 0.9rem;"></p>
-                </form>
-            </div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>
+          Software for the<br/>
+          industries the <em>world</em><br/>
+          <span class="muted">depends on.</span>
+        </h1>
+        <p class="lede">
+          Civitage is a boutique engineering firm building high-impact digital infrastructure across
+          global finance, national defense, energy, and the built environment.
+        </p>
+        <div class="hero-actions">
+          <a href="#sectors" class="btn btn-primary">
+            <span>Our practice</span>
+            <span class="arr">→</span>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Start a project</span>
+          </a>
         </div>
-    </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="logo">CIVITAGE</div>
-                    <p>High-Impact Software Engineering & Consulting.</p>
-                </div>
-                <div class="footer-links">
-                    <!-- Links hidden for now -->
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Civitage, Inc. All rights reserved.</p>
-            </div>
+        <div class="ticker">
+          <span class="pulse"></span>
+          <span id="ticker-text">Currently engaged · Financial infrastructure · NYC + Remote</span>
         </div>
-    </footer>
+      </div>
 
-    <script src="main.js"></script>
+      <div class="aperture-wrap">
+        <div class="aperture reveal">
+          <img src="hero-bg.png" alt="Skyline, Lower Manhattan at dusk" />
+          <div class="aperture-tag">
+            <span class="loc">Fig. 01 — Lower Manhattan</span>
+            <span class="coord">40.7128° N, 74.0060° W</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================== SECTORS ================== -->
+<section id="sectors" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">§ 02 — Sectors</div>
+      <h2>A short list of <em>hard problems</em> we know how to solve.</h2>
+    </div>
+
+    <div class="sectors">
+      <a class="sector reveal" href="#contact">
+        <span class="num">01 —</span>
+        <h3>Enterprise<br/>Finance</h3>
+        <p class="desc">High-reliability systems for capital markets, identity verification, and scalable fintech infrastructure under regulatory constraint.</p>
+        <div class="tags">
+          <span class="tag">Capital Markets</span>
+          <span class="tag">KYC / AML</span>
+          <span class="tag">Fintech</span>
+        </div>
+      </a>
+
+      <a class="sector reveal" href="#contact">
+        <span class="num">02 —</span>
+        <h3>Defense<br/>&amp; Energy</h3>
+        <p class="desc">Resilient, secure, mission-critical software for national security systems and modern energy grids.</p>
+        <div class="tags">
+          <span class="tag">Secure Systems</span>
+          <span class="tag">Grid</span>
+          <span class="tag">Telemetry</span>
+        </div>
+      </a>
+
+      <a class="sector reveal" href="#contact">
+        <span class="num">03 —</span>
+        <h3>Urban<br/>Intelligence</h3>
+        <p class="desc">Data platforms for the built environment. Recent work at <span style="color:var(--accent); border-bottom: 1px solid var(--accent);">citybuilder.nyc</span>.</p>
+        <div class="tags">
+          <span class="tag">Geospatial</span>
+          <span class="tag">Built Env.</span>
+          <span class="tag">Civic</span>
+        </div>
+      </a>
+
+      <a class="sector reveal" href="#contact">
+        <span class="num">04 —</span>
+        <h3>Quiet<br/>Infrastructure</h3>
+        <p class="desc">The boring but critical middle tier — ETL, queues, observability, internal tools. Systems you only hear about when they break, that never do.</p>
+        <div class="tags">
+          <span class="tag">Platform</span>
+          <span class="tag">Observability</span>
+          <span class="tag">Internal</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================== MANIFESTO ================== -->
+<section id="manifesto" class="manifesto">
+  <div class="wrap manifesto-inner reveal">
+    <div class="mono kicker">§ 03 — Practice</div>
+    <p class="statement">
+      We work on the <span class="accent-word">digital backbone</span> of modern industry —
+      the infrastructure that routes capital, moves power, coordinates cities, and keeps nations safe.
+      Small team. Senior engineers only. No pyramid, no handoffs.
+    </p>
+    <div class="signatories">
+      <span><strong>Team</strong>Principal engineers</span>
+      <span><strong>Location</strong>New York City</span>
+      <span><strong>Engagements</strong>3 at a time, max</span>
+      <span><strong>Founded</strong>MMXVIII</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================== PROOF ================== -->
+<section id="proof" class="section" style="padding-top: clamp(56px, 7vw, 96px);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">§ 04 — In numbers</div>
+      <h2>Boutique by design, <em>measured</em> by outcomes.</h2>
+    </div>
+
+    <div class="proof reveal">
+      <div class="proof-cell">
+        <div class="label">Founded</div>
+        <div class="value">MMXVIII</div>
+        <div class="sub">Eight years of practice</div>
+      </div>
+      <div class="proof-cell">
+        <div class="label">Sectors</div>
+        <div class="value">04</div>
+        <div class="sub">Finance · Defense · Energy · Urban</div>
+      </div>
+      <div class="proof-cell">
+        <div class="label">Engagement</div>
+        <div class="value">Senior</div>
+        <div class="sub">Principals only, no tiers</div>
+      </div>
+      <div class="proof-cell">
+        <div class="label">Based</div>
+        <div class="value">NYC</div>
+        <div class="sub">40.71° N, 74.00° W</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== CONTACT ================== -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom: 48px;">
+      <div class="kicker">§ 05 — Contact</div>
+      <h2>Bring us something <em>difficult</em>.</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="lede">
+          We take on three engagements at a time. Tell us what you're working on —
+          if it's a fit, you'll hear back from a principal within two business days.
+        </p>
+
+        <div class="contact-meta">
+          <div class="row"><span class="k">Email</span><span class="v"><a href="mailto:info@civitage.com">info@civitage.com</a></span></div>
+          <div class="row"><span class="k">Office</span><span class="v">New York, NY</span></div>
+          <div class="row"><span class="k">Hours</span><span class="v">Mon–Fri · 09:00 – 18:00 ET</span></div>
+          <div class="row"><span class="k">Press</span><span class="v"><a href="mailto:press@civitage.com">press@civitage.com</a></span></div>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form reveal" action="https://formspree.io/f/xzdzygyz" method="POST">
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@company.com" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="sector">Sector</label>
+          <select id="sector" name="sector">
+            <option>Enterprise Finance</option>
+            <option>Defense &amp; Energy</option>
+            <option>Urban Intelligence</option>
+            <option>Quiet Infrastructure</option>
+            <option>Other / Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Project brief</label>
+          <textarea id="message" name="message" rows="4" placeholder="A paragraph or two. Constraints &amp; timeline welcome."></textarea>
+        </div>
+        <div class="submit-wrap">
+          <span class="status" id="form-status">PGP on request · We reply within 2 business days</span>
+          <button type="submit" id="submit-btn" class="btn btn-primary">
+            <span>Send brief</span>
+            <span class="arr">→</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================== FOOTER ================== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="wordmark"><span class="dot"></span>CIVITAGE</a>
+        <p>High-impact software engineering for the industries the world depends on.</p>
+      </div>
+      <div>
+        <h4>Sectors</h4>
+        <ul>
+          <li><a href="#sectors">Enterprise Finance</a></li>
+          <li><a href="#sectors">Defense &amp; Energy</a></li>
+          <li><a href="#sectors">Urban Intelligence</a></li>
+          <li><a href="#sectors">Quiet Infrastructure</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Practice</h4>
+        <ul>
+          <li><a href="#manifesto">How we work</a></li>
+          <li><a href="#proof">In numbers</a></li>
+          <li><a href="https://citybuilder.nyc" target="_blank" rel="noopener">CityBuilder</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@civitage.com">info@civitage.com</a></li>
+          <li><a href="mailto:press@civitage.com">press@civitage.com</a></li>
+          <li>New York, NY</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© MMXXVI Civitage, Inc.</span>
+      <span>Made in New York</span>
+      <span id="now">—</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
 </body>
-
 </html>
