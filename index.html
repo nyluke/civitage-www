@@ -3,303 +3,46 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Civitage — High-Impact Software Engineering</title>
+<title>Civitage</title>
+<meta name="description" content="Civitage is a software engineering and consulting firm in New York, and the maker of CityBuilder." />
+<meta name="color-scheme" content="light dark" />
+<meta name="theme-color" content="#f4f1ec" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0e1217" media="(prefers-color-scheme: dark)" />
+
+<meta property="og:title" content="Civitage" />
+<meta property="og:description" content="Software engineering and consulting for finance, defense, energy, and the built environment." />
+<meta property="og:url" content="https://www.civitage.com/" />
+<meta property="og:image" content="https://www.civitage.com/brand/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-<script>
-  // Design config — change values to re-skin. Options documented in main.js.
-  window.__TWEAKS__ = {
-    "direction": "editorial",
-    "accent": "blue",
-    "motion": "subtle",
-    "heroTreatment": "aperture",
-    "density": "comfortable"
-  };
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================== NAV ================== -->
-<nav class="nav">
-  <div class="wrap nav-inner">
-    <a href="#" class="wordmark"><span class="dot"></span>CIVITAGE</a>
-    <div class="nav-links">
-      <a href="#sectors">Sectors</a>
-      <a href="#manifesto">Practice</a>
-      <a href="#proof">Work</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <a href="#contact" class="nav-cta">
-      <span>Start a project</span>
-      <span class="arr">→</span>
-    </a>
-  </div>
-</nav>
-
-<!-- ================== HERO ================== -->
-<header class="hero grid-bg">
-  <div class="wrap">
-
-    <div class="hero-eyebrow">
-      <span class="bar"></span>
-      <span class="mono">N°01 — Software Consultancy / Est. NYC / 2018</span>
-    </div>
-
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <h1>
-          Software for the<br/>
-          industries the <em>world</em><br/>
-          <span class="muted">depends on.</span>
-        </h1>
-        <p class="lede">
-          Civitage is a boutique engineering firm building high-impact digital infrastructure across
-          global finance, national defense, energy, and the built environment.
-        </p>
-        <div class="hero-actions">
-          <a href="#sectors" class="btn btn-primary">
-            <span>Our practice</span>
-            <span class="arr">→</span>
-          </a>
-          <a href="#contact" class="btn btn-ghost">
-            <span>Start a project</span>
-          </a>
-        </div>
-
-        <div class="ticker">
-          <span class="pulse"></span>
-          <span id="ticker-text">Currently engaged · Financial infrastructure · NYC + Remote</span>
-        </div>
-      </div>
-
-      <div class="aperture-wrap">
-        <div class="aperture reveal">
-          <img src="hero-bg.png" alt="Skyline, Lower Manhattan at dusk" />
-          <div class="aperture-tag">
-            <span class="loc">Fig. 01 — Lower Manhattan</span>
-            <span class="coord">40.7128° N, 74.0060° W</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<header>
+  <a href="/" class="logo" aria-label="Civitage">
+    <svg viewBox="0 0 173.58 36" role="img" aria-hidden="true"><path d="M0 0h10v10h-10zM13 0h10v10h-10zM26 0h10v10h-10zM0 13h10v10h-10zM0 26h10v10h-10zM13 26h10v10h-10zM26 26h10v10h-10z"/><path transform="translate(51.03 10.00) scale(0.8889)" d="M9.43 18.41Q6.97 18.41 5.1 17.28Q3.22 16.15 2.15 14.06Q1.09 11.97 1.09 9.03Q1.09 6.14 2.13 4.02Q3.17 1.9 5.05 0.75Q6.92 -0.41 9.46 -0.41Q12.9 -0.41 14.81 1.31Q16.71 3.02 17.29 6.08L13.84 6.26Q13.51 4.49 12.42 3.47Q11.33 2.46 9.46 2.46Q7.17 2.46 5.83 4.23Q4.49 6.01 4.49 9.03Q4.49 12.07 5.84 13.8Q7.2 15.54 9.43 15.54Q11.43 15.54 12.54 14.44Q13.64 13.34 13.94 11.41L17.39 11.59Q16.86 14.75 14.84 16.58Q12.83 18.41 9.43 18.41Z M23.43 18V0H26.72V18Z M38.79 18 32.27 0H35.75L40.79 14.32L45.81 0H49.28L42.74 18Z M54.84 18V0H58.13V18Z M68.96 18V2.86H63.48V0H77.7V2.86H72.25V18Z M81.53 18 88.02 0H92.05L98.54 18H95.1L93.6 13.74H86.48L84.98 18ZM87.44 10.93H92.64L90.05 3.32Z M111.37 18.41Q108.81 18.41 106.96 17.2Q105.11 16 104.13 13.89Q103.16 11.79 103.16 9.03Q103.16 6.31 104.16 4.18Q105.16 2.05 107.04 0.82Q108.91 -0.41 111.55 -0.41Q113.83 -0.41 115.39 0.38Q116.95 1.17 117.89 2.56Q118.83 3.95 119.21 5.78L115.76 5.96Q115.48 4.36 114.49 3.41Q113.5 2.46 111.57 2.46Q109.85 2.46 108.75 3.35Q107.65 4.23 107.1 5.72Q106.55 7.2 106.55 9.03Q106.55 10.9 107.09 12.37Q107.62 13.84 108.75 14.69Q109.88 15.54 111.6 15.54Q112.94 15.54 113.91 14.98Q114.87 14.43 115.43 13.46Q115.99 12.5 116.04 11.28H111.6V8.72H119.26V18H117.13L116.97 15.29Q116.29 16.71 114.78 17.56Q113.27 18.41 111.37 18.41Z M125.54 18V0H137.66V2.86H128.84V7.55H137.36V10.39H128.84V15.14H137.86V18Z"/></svg>
+  </a>
 </header>
 
-<!-- ================== SECTORS ================== -->
-<section id="sectors" class="section">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="kicker">§ 02 — Sectors</div>
-      <h2>A short list of <em>hard problems</em> we know how to solve.</h2>
-    </div>
+<main>
+  <h1>Software engineering and consulting for finance, defense, energy, and the built environment.</h1>
+  <p>
+    Civitage is a small firm based in New York. We also make
+    <a href="https://citybuilder.nyc">CityBuilder</a>, which helps NYC property owners and managers
+    stay ahead of DOB, FDNY, ECB, and HPD compliance.
+  </p>
+  <p><a href="mailto:info@civitage.com">info@civitage.com</a></p>
+</main>
 
-    <div class="sectors">
-      <a class="sector reveal" href="#contact">
-        <span class="num">01 —</span>
-        <h3>Enterprise<br/>Finance</h3>
-        <p class="desc">High-reliability systems for capital markets, identity verification, and scalable fintech infrastructure under regulatory constraint.</p>
-        <div class="tags">
-          <span class="tag">Capital Markets</span>
-          <span class="tag">KYC / AML</span>
-          <span class="tag">Fintech</span>
-        </div>
-      </a>
-
-      <a class="sector reveal" href="#contact">
-        <span class="num">02 —</span>
-        <h3>Defense<br/>&amp; Energy</h3>
-        <p class="desc">Resilient, secure, mission-critical software for national security systems and modern energy grids.</p>
-        <div class="tags">
-          <span class="tag">Secure Systems</span>
-          <span class="tag">Grid</span>
-          <span class="tag">Telemetry</span>
-        </div>
-      </a>
-
-      <a class="sector reveal" href="#contact">
-        <span class="num">03 —</span>
-        <h3>Urban<br/>Intelligence</h3>
-        <p class="desc">Data platforms for the built environment. Recent work at <span style="color:var(--accent); border-bottom: 1px solid var(--accent);">citybuilder.nyc</span>.</p>
-        <div class="tags">
-          <span class="tag">Geospatial</span>
-          <span class="tag">Built Env.</span>
-          <span class="tag">Civic</span>
-        </div>
-      </a>
-
-      <a class="sector reveal" href="#contact">
-        <span class="num">04 —</span>
-        <h3>Quiet<br/>Infrastructure</h3>
-        <p class="desc">The boring but critical middle tier — ETL, queues, observability, internal tools. Systems you only hear about when they break, that never do.</p>
-        <div class="tags">
-          <span class="tag">Platform</span>
-          <span class="tag">Observability</span>
-          <span class="tag">Internal</span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================== MANIFESTO ================== -->
-<section id="manifesto" class="manifesto">
-  <div class="wrap manifesto-inner reveal">
-    <div class="mono kicker">§ 03 — Practice</div>
-    <p class="statement">
-      We work on the <span class="accent-word">digital backbone</span> of modern industry —
-      the infrastructure that routes capital, moves power, coordinates cities, and keeps nations safe.
-      Small team. Senior engineers only. No pyramid, no handoffs.
-    </p>
-    <div class="signatories">
-      <span><strong>Team</strong>Principal engineers</span>
-      <span><strong>Location</strong>New York City</span>
-      <span><strong>Engagements</strong>3 at a time, max</span>
-      <span><strong>Founded</strong>MMXVIII</span>
-    </div>
-  </div>
-</section>
-
-<!-- ================== PROOF ================== -->
-<section id="proof" class="section" style="padding-top: clamp(56px, 7vw, 96px);">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="kicker">§ 04 — In numbers</div>
-      <h2>Boutique by design, <em>measured</em> by outcomes.</h2>
-    </div>
-
-    <div class="proof reveal">
-      <div class="proof-cell">
-        <div class="label">Founded</div>
-        <div class="value">MMXVIII</div>
-        <div class="sub">Eight years of practice</div>
-      </div>
-      <div class="proof-cell">
-        <div class="label">Sectors</div>
-        <div class="value">04</div>
-        <div class="sub">Finance · Defense · Energy · Urban</div>
-      </div>
-      <div class="proof-cell">
-        <div class="label">Engagement</div>
-        <div class="value">Senior</div>
-        <div class="sub">Principals only, no tiers</div>
-      </div>
-      <div class="proof-cell">
-        <div class="label">Based</div>
-        <div class="value">NYC</div>
-        <div class="sub">40.71° N, 74.00° W</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================== CONTACT ================== -->
-<section id="contact" class="contact">
-  <div class="wrap">
-    <div class="section-head reveal" style="margin-bottom: 48px;">
-      <div class="kicker">§ 05 — Contact</div>
-      <h2>Bring us something <em>difficult</em>.</h2>
-    </div>
-
-    <div class="contact-grid">
-      <div class="reveal">
-        <p class="lede">
-          We take on three engagements at a time. Tell us what you're working on —
-          if it's a fit, you'll hear back from a principal within two business days.
-        </p>
-
-        <div class="contact-meta">
-          <div class="row"><span class="k">Email</span><span class="v"><a href="mailto:info@civitage.com">info@civitage.com</a></span></div>
-          <div class="row"><span class="k">Office</span><span class="v">New York, NY</span></div>
-          <div class="row"><span class="k">Hours</span><span class="v">Mon–Fri · 09:00 – 18:00 ET</span></div>
-          <div class="row"><span class="k">Press</span><span class="v"><a href="mailto:press@civitage.com">press@civitage.com</a></span></div>
-        </div>
-      </div>
-
-      <form id="contact-form" class="contact-form reveal" action="https://formspree.io/f/xzdzygyz" method="POST">
-        <div class="form-row">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="jane@company.com" required />
-          </div>
-        </div>
-        <div class="field">
-          <label for="sector">Sector</label>
-          <select id="sector" name="sector">
-            <option>Enterprise Finance</option>
-            <option>Defense &amp; Energy</option>
-            <option>Urban Intelligence</option>
-            <option>Quiet Infrastructure</option>
-            <option>Other / Not sure yet</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="message">Project brief</label>
-          <textarea id="message" name="message" rows="4" placeholder="A paragraph or two. Constraints &amp; timeline welcome."></textarea>
-        </div>
-        <div class="submit-wrap">
-          <span class="status" id="form-status">PGP on request · We reply within 2 business days</span>
-          <button type="submit" id="submit-btn" class="btn btn-primary">
-            <span>Send brief</span>
-            <span class="arr">→</span>
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- ================== FOOTER ================== -->
-<footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="#" class="wordmark"><span class="dot"></span>CIVITAGE</a>
-        <p>High-impact software engineering for the industries the world depends on.</p>
-      </div>
-      <div>
-        <h4>Sectors</h4>
-        <ul>
-          <li><a href="#sectors">Enterprise Finance</a></li>
-          <li><a href="#sectors">Defense &amp; Energy</a></li>
-          <li><a href="#sectors">Urban Intelligence</a></li>
-          <li><a href="#sectors">Quiet Infrastructure</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Practice</h4>
-        <ul>
-          <li><a href="#manifesto">How we work</a></li>
-          <li><a href="#proof">In numbers</a></li>
-          <li><a href="https://citybuilder.nyc" target="_blank" rel="noopener">CityBuilder</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@civitage.com">info@civitage.com</a></li>
-          <li><a href="mailto:press@civitage.com">press@civitage.com</a></li>
-          <li>New York, NY</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© MMXXVI Civitage, Inc.</span>
-      <span>Made in New York</span>
-      <span id="now">—</span>
-    </div>
-  </div>
-</footer>
-
-<script src="main.js"></script>
+<footer>© 2026 Civitage, Inc.</footer>
 
 </body>
 </html>
